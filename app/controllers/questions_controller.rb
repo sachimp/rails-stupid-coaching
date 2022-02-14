@@ -4,7 +4,6 @@ class QuestionsController < ApplicationController
 
   def answer
     @answer = params[:question]
-    @response = nil
     if @answer == "I am going to work"
       @response = "Great!"
     elsif @answer.include? "?"
